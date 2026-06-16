@@ -1,7 +1,7 @@
 services:
   web:
     container_name: efe-egy-web
-    image: efe-egy:latest
+    image: alnaqib/efe-egy-web
     ports:
       - "8080:80"
     volumes:
