@@ -1,0 +1,12 @@
+services:
+  web:
+    container_name: efe-egy-web
+    image: efe-egy:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - db-efe-web:/usr/local/apache2/htdocs
+    restart: always
+
+volumes:
+  db-efe-web:
