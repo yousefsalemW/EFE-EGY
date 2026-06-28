@@ -57,7 +57,7 @@ pipeline {
                 sh '''
                 docker run -d \
                     --name ${CONTAINER_NAME} \
-                    -p 8080:${APP_PORT} \
+                    -p 8081:${APP_PORT} \
                     ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
